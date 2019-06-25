@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>文章归档 | Hkesd</title>
+<title>基于gin搭建API框架 | Hkesd</title>
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -85,30 +85,56 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          
+          <div class="post-detail">
+            <h2 class="post-title">基于gin搭建API框架</h2>
+            <div class="post-date">2019-06-25</div>
+            
+              <div class="feature-container" style="background-image: url('https://hkesd.github.io//post-images/gin-framework.png')">
+              </div>
+            
+            <div class="post-content">
+              <p>gin框架虽然是开箱即用的，但是在我们写业务逻辑之前还是有必要做一些基础封装的，本文试图从一些基本规则的角度诠释如何使用基于gin构建出符合业务需求的API框架</p>
+<!-- more -->
+<h3 id="系统环境依赖">系统环境&amp;依赖</h3>
+<h4 id="go">go</h4>
+<ul>
+<li><code>go version go1.12.5 darwin/amd64</code></li>
+</ul>
+<h4 id="web">web</h4>
+<ul>
+<li><code>github.com/gin-gonic/gin</code></li>
+</ul>
+<h4 id="配置文件">配置文件</h4>
+<ul>
+<li><code>yaml</code></li>
+</ul>
+<h4 id="日志">日志</h4>
+<ul>
+<li><code>github.com/sirupsen/logrus</code></li>
+<li><code>github.com/lestrrat/go-file-rotatelogs</code></li>
+<li><code>github.com/rifflock/lfshook</code></li>
+</ul>
+<h4 id="数据库orm">数据库（orm）</h4>
+<ul>
+<li><code>github.com/jinzhu/gorm</code></li>
+</ul>
+<h3 id="基本思想">基本思想</h3>
 
-          <h2 class="archives-title">文章归档</h2>
-          <div class="archives-container">
+            </div>
             
-              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2019</h2>
-              
+              <div class="tag-container">
                 
-                  <article class="post">
-                    <a href="https://hkesd.github.io//post/gin-framework">
-                      <h2 class="post-title">
-                        基于gin搭建API框架
-                      </h2>
-                    </a>
-                  </article>
+                  <a href="https://hkesd.github.io//tag/7_CG8BsO9" class="tag">
+                    golang
+                  </a>
                 
-              
+              </div>
             
+            
+
+            
+
           </div>
-
-          <div class="pagination-container">
-  
-  
-</div>
 
         </div>
       </div>
