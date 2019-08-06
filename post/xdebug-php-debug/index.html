@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://hkesd.github.io//favicon.ico?v=1565060940820">
+<link rel="shortcut icon" href="https://hkesd.github.io//favicon.ico?v=1565063363125">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://hkesd.github.io//styles/main.css">
 
@@ -30,7 +30,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://hkesd.github.io/">
-        <img src="https://hkesd.github.io//images/avatar.png?v=1565060940820" class="site-logo">
+        <img src="https://hkesd.github.io//images/avatar.png?v=1565063363125" class="site-logo">
         <h1 class="site-title">Hkesd</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -89,14 +89,79 @@
             <h2 class="post-title">xdebug调试php代码</h2>
             <div class="post-date">2019-08-06</div>
             
+              <div class="feature-container" style="background-image: url('https://hkesd.github.io//post-images/xdebug-php-debug.png')">
+              </div>
+            
             <div class="post-content">
-              <h3 id="下载xdebug">下载xdebug</h3>
+              <h3 id="xdebug下载安装">xdebug下载&amp;安装</h3>
 <h4 id="使用xdebug工具检测工具">使用xdebug工具检测工具</h4>
 <ul>
 <li>使用<a href="https://xdebug.org/wizard.php">xdebug官方工具</a>检测当前安装的php应该使用哪个版本的xdebug</li>
 <li>输出phpinfo()信息</li>
 <li>粘贴到<a href="https://xdebug.org/wizard.php">xdebug官方工具</a>即可</li>
 <li><img src="https://hkesd.github.io//post-images/1565060917891.png" alt=""></li>
+</ul>
+<h4 id="安装xdebug">安装xdebug</h4>
+<ul>
+<li><img src="https://hkesd.github.io//post-images/1565061330450.png" alt=""></li>
+<li>跟着步骤走就行</li>
+</ul>
+<h4 id="修改phpini">修改php.ini</h4>
+<pre><code>[xdebug]
+zend_extension=&quot;/usr/local/Cellar/php@7.2/7.2.14/pecl/20170718/xdebug.so&quot;
+xdebug.remote_enable=1
+xdebug.remote_port=9010
+xdebug.remote_log=/tmp/xdebug-remote.log
+xdebug.remote_handler=dbgp
+xdebug.idekey = PHPSTORM
+
+xdebug.profiler_enable=on
+xdebug.trace_output_dir=&quot;/tmp/xdebug&quot;
+xdebug.profiler_output_dir=&quot;/tmp/xdebug&quot;
+</code></pre>
+<ul>
+<li>端口可以自定义，不冲突就行</li>
+<li>重启php</li>
+</ul>
+<h3 id="配置idephpstrom">配置IDE（PHPSTROM）</h3>
+<h4 id="phpstrom-设置">phpstrom 设置</h4>
+<ul>
+<li><img src="https://hkesd.github.io//post-images/1565062519296.png" alt=""></li>
+</ul>
+<h4 id="添加debug-configurations">添加debug configurations</h4>
+<ul>
+<li><img src="https://hkesd.github.io//post-images/1565062632784.png" alt=""></li>
+<li><img src="https://hkesd.github.io//post-images/1565062719452.png" alt=""></li>
+</ul>
+<h4 id="chrome-安装xdebug-helper插件">chrome 安装Xdebug helper插件</h4>
+<ul>
+<li><a href="https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc">插件地址</a></li>
+<li><img src="https://hkesd.github.io//post-images/1565062935009.png" alt=""></li>
+<li><img src="https://hkesd.github.io//post-images/1565062940445.png" alt=""></li>
+</ul>
+<h3 id="测试">测试</h3>
+<h4 id="phpstorm-打开监听">phpstorm 打开监听</h4>
+<ul>
+<li><img src="https://hkesd.github.io//post-images/1565062998630.png" alt=""></li>
+</ul>
+<h4 id="代码打上断点">代码打上断点</h4>
+<ul>
+<li><img src="https://hkesd.github.io//post-images/1565063034122.png" alt=""></li>
+</ul>
+<h4 id="浏览器访问">浏览器访问</h4>
+<ul>
+<li><img src="https://hkesd.github.io//post-images/1565063068225.png" alt=""></li>
+</ul>
+<h4 id="查看效果">查看效果</h4>
+<ul>
+<li><img src="https://hkesd.github.io//post-images/1565063094687.png" alt=""></li>
+</ul>
+<h3 id="总结">总结</h3>
+<ul>
+<li>项目开发工程中简单的调试可以通过var_dump() 等函数来输出查看</li>
+<li>xdebug是php开发过程中的一大调试利器</li>
+<li>代码调试、代码最终</li>
+<li>知其然，知其所以然</li>
 </ul>
 
             </div>
