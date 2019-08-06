@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hkesd.github.io/</id>
     <title>Hkesd</title>
-    <updated>2019-08-06T03:49:26.211Z</updated>
+    <updated>2019-08-06T03:52:49.124Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hkesd.github.io/"/>
     <link rel="self" href="https://hkesd.github.io//atom.xml"/>
@@ -16,6 +16,10 @@
         <link href="https://hkesd.github.io//post/xdebug-php-debug">
         </link>
         <updated>2019-08-06T02:54:09.000Z</updated>
+        <summary type="html"><![CDATA[<p>xdebug作为php开发中的调试利器，本文介绍了xdebug的安装方法</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>xdebug作为php开发中的调试利器，本文介绍了xdebug的安装方法</p>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[基于gin搭建API框架]]></title>
